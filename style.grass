@@ -1,0 +1,519 @@
+﻿node {
+  diameter: 50px;
+  color: #A5ABB6;
+  border-color: #9AA1AC;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  font-size: 10px;
+}
+relationship {
+  color: #A5ABB6;
+  shaft-width: 1px;
+  font-size: 8px;
+  padding: 3px;
+  text-color-external: #000000;
+  text-color-internal: #FFFFFF;
+  caption: "<type>";
+}
+node.* {
+  color: #C990C0;
+  border-color: #b261a5;
+  text-color-internal: #FFFFFF;
+  defaultCaption: "<id>";
+}
+node._GraphConfig {
+  color: #F79767;
+  border-color: #f36924;
+  text-color-internal: #FFFFFF;
+  defaultCaption: "<id>";
+  caption: "{_classLabel}";
+}
+node.IndexEntry {
+  color: #57C7E3;
+  border-color: #23b3d7;
+  text-color-internal: #FFFFFF;
+  caption: "{label}";
+}
+node.IndexPerson {
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+  defaultCaption: "<id>";
+  caption: "{name1}";
+}
+node.Regesta {
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  caption: "{endDate}";
+  diameter: 65px;
+}
+node.Action {
+  color: #DA7194;
+  border-color: #cc3c6c;
+  text-color-internal: #FFFFFF;
+  caption: "{action}";
+}
+node.IndexPlace {
+  color: #ECB5C9;
+  border-color: #da7298;
+  text-color-internal: #604A0E;
+  defaultCaption: "<id>";
+  caption: "{name1}";
+}
+node.Person {
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+  caption: "{label}";
+}
+node.Wikidata {
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #604A0E;
+  caption: "{label}";
+}
+node.XmlDocument {
+  color: #DA7194;
+  border-color: #cc3c6c;
+  text-color-internal: #FFFFFF;
+  caption: "{_xmlEncoding}";
+}
+node.XmlWord {
+  color: #569480;
+  border-color: #447666;
+  text-color-internal: #FFFFFF;
+  caption: "{text}";
+}
+node.XmlTag {
+  caption: "{_name}";
+}
+node.Source {
+  defaultCaption: "<id>";
+}
+node.Document {
+  caption: "{name}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+}
+node.Origin {
+  caption: "{Topic}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+node.MPChapter {
+  caption: "{eeTitle}";
+  color: #569480;
+  border-color: #447666;
+  text-color-internal: #FFFFFF;
+}
+node.eeChapter {
+  caption: "{eeTitle}";
+}
+node.Topic {
+  caption: "{topic}";
+}
+node.Lemma {
+  caption: "{ID}";
+}
+node.Sache {
+  defaultCaption: "<id>";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+  caption: "{Lemma}";
+  diameter: 65px;
+}
+node.Werk {
+  defaultCaption: "<id>";
+  color: #604A0E;
+  border-color: #423204;
+  text-color-internal: #FFFFFF;
+  caption: "{Lemma}";
+  diameter: 65px;
+}
+node.Ort {
+  defaultCaption: "<id>";
+  color: #569480;
+  border-color: #447666;
+  text-color-internal: #FFFFFF;
+  diameter: 65px;
+  caption: "{name}";
+}
+relationship.UNTERBEGRIFF_VON {
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+  shaft-width: 5px;
+}
+node.Seite {
+  caption: "{nr}";
+  color: #DA7194;
+  border-color: #cc3c6c;
+  text-color-internal: #FFFFFF;
+}
+relationship.SEITE {
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+relationship.NÄCHSTE_SEITE {
+  shaft-width: 5px;
+  color: #DA7194;
+  border-color: #cc3c6c;
+  text-color-internal: #FFFFFF;
+}
+node.ExternalResource {
+  caption: "{title}";
+}
+node.Place {
+  caption: "{normalizedGerman}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+  diameter: 65px;
+}
+node.Reference {
+  caption: "{title}";
+}
+node.IndexThing {
+  defaultCaption: "<id>";
+}
+node.Position {
+  caption: "{wdLabel}";
+}
+node.Monument {
+  caption: "{MID}";
+  color: #57C7E3;
+  border-color: #23b3d7;
+  text-color-internal: #2A2C34;
+}
+node.AbstractScene {
+  caption: "{AMID}";
+}
+node.IdentifiedScene {
+  caption: "{Nomination}";
+}
+node.AbstractEntity {
+  caption: "{AEID}";
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+}
+node.IdentifiedEntity {
+  caption: "{IEID}";
+}
+node.WikidataPerson {
+  defaultCaption: "<id>";
+  caption: "{wdLabel}";
+}
+node.Com {
+  caption: "{receivedPersonName}";
+}
+node.Letter {
+  caption: "{date}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+  diameter: 65px;
+}
+node.Article {
+  caption: "{year}";
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+  diameter: 65px;
+}
+node.Resource {
+  caption: "{label}";
+  color: #57C7E3;
+  border-color: #23b3d7;
+  text-color-internal: #2A2C34;
+}
+node.WikipediaPage {
+  defaultCaption: "<id>";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+}
+node.Category {
+  defaultCaption: "<id>";
+  caption: "{catName}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+node.Concept {
+  caption: "{type}";
+}
+node.Text {
+  caption: "{text}";
+}
+relationship.SHARE_BORDER_WITH {
+  caption: "<type>";
+}
+node.State {
+  caption: "{code}";
+}
+node.Repository {
+  caption: "{name}";
+}
+node.User {
+  caption: "{login}";
+}
+node.Question {
+  caption: "{name}";
+}
+node.Tag {
+  caption: "{name}";
+}
+node.Ingredient {
+  caption: "{name}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+}
+node.Recipe {
+  caption: "{name}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+node.Character {
+  caption: "{url}";
+}
+relationship.HELPS {
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+relationship.EROAD {
+  shaft-width: 5px;
+  color: #D9C8AE;
+  border-color: #c0a378;
+  text-color-internal: #2A2C34;
+  caption: "{distance}";
+}
+node.Node {
+  caption: "{value}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+}
+node.Community {
+  caption: "{cId}";
+}
+node.Author {
+  caption: "{name}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+node.Venue {
+  caption: "{name}";
+  color: #57C7E3;
+  border-color: #23b3d7;
+  text-color-internal: #2A2C34;
+}
+node.ExternalSource {
+  caption: "{title}";
+}
+relationship.CO_AUTHOR {
+  color: #DA7194;
+  border-color: #cc3c6c;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+relationship.AUTHOR {
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+relationship.CITED {
+  color: #F79767;
+  border-color: #f36924;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+node.Movie {
+  caption: "{title}";
+}
+relationship.LINKED_TO {
+  shaft-width: 5px;
+}
+relationship.EDGE {
+  shaft-width: 5px;
+  caption: "{value}";
+}
+node.Protokollbuch {
+  caption: "{pbSignatur}";
+  color: #D9C8AE;
+  border-color: #c0a378;
+  text-color-internal: #2A2C34;
+}
+node.NotizMit {
+  caption: "{nmId}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 50px;
+}
+node.KatArtProzess {
+  caption: "{kaProzessart}";
+  color: #57C7E3;
+  border-color: #23b3d7;
+  text-color-internal: #2A2C34;
+  diameter: 65px;
+}
+node.Relation {
+  caption: "{rtId}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+node.KatPerson {
+  caption: "{name}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+  diameter: 65px;
+}
+node.KatStreitggstd {
+  caption: "{ksStreitggstd}";
+  color: #F79767;
+  border-color: #f36924;
+  text-color-internal: #FFFFFF;
+  diameter: 65px;
+}
+node.Ereignis {
+  caption: "{name}";
+  color: #569480;
+  border-color: #447666;
+  text-color-internal: #FFFFFF;
+}
+node.Ereignistyp {
+  caption: "{bezeichnung}";
+  color: #F79767;
+  border-color: #f36924;
+  text-color-internal: #FFFFFF;
+}
+node.Belegtext {
+  caption: "{text}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+relationship.VERHEIRATET_MIT {
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+relationship.KIND_VON {
+  shaft-width: 5px;
+  color: #569480;
+  border-color: #447666;
+  text-color-internal: #FFFFFF;
+}
+relationship.PERSON_IN {
+  color: #C990C0;
+  border-color: #b261a5;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+relationship.EREIGNIS_TYP {
+  shaft-width: 5px;
+}
+relationship.BELEGTEXT {
+  shaft-width: 5px;
+}
+relationship.VERWANDTSCHAFT {
+  color: #DA7194;
+  border-color: #cc3c6c;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+relationship.ORT {
+  shaft-width: 5px;
+}
+node.RootCategory {
+  defaultCaption: "<id>";
+}
+node.Page {
+  caption: "{pageUrl}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+}
+node.WD_Disease {
+  defaultCaption: "<id>";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+}
+node.DO_Disease {
+  defaultCaption: "<id>";
+  color: #D9C8AE;
+  border-color: #c0a378;
+  text-color-internal: #2A2C34;
+  caption: "{label}";
+}
+node.Mesh_Disease {
+  defaultCaption: "<id>";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+relationship.SAME_AS {
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+  shaft-width: 5px;
+}
+node.Relationship {
+  defaultCaption: "<id>";
+}
+node.Sippe {
+  caption: "{label}";
+}
+node.Obrigkeit {
+  caption: "{name}";
+}
+node.Rolle {
+  caption: "{name}";
+}
+node.Gemeindedienst {
+  caption: "{name}";
+}
+node.Familienverband {
+  caption: "{label}";
+}
+node.Religion {
+  caption: "{name}";
+}
+node.Race {
+  caption: "{race}";
+}
+node.Country {
+  caption: "{name}";
+}
+node.Family {
+  caption: "{name}";
+}
+node.Occupation {
+  caption: "{name}";
+}
+node.Word {
+  caption: "{value}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+}
+node.IndexEvent {
+  defaultCaption: "<id>";
+}
